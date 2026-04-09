@@ -20,7 +20,7 @@ import '../styles/global.css';
     <section class="relative min-h-screen bg-dark overflow-hidden">
       <img src="/images/manuscript-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
       <div class="relative z-10 h-screen flex items-center justify-center">
-        <img src="/images/hero-full.png" alt="Władimir Maximow — od Wisły do Odry" class="w-full h-full object-cover" />
+        <img src="/images/hero-full.png" alt="Władimir Maximow — od Wisły do Odry" class="w-full h-full object-contain md:object-cover" />
       </div>
     </section>
 
@@ -32,21 +32,21 @@ import '../styles/global.css';
             <img src="/images/ikona-sickle.png" alt="" class="h-16 md:h-20 w-auto" />
           </div>
           <h3 class="font-sans italic text-lg md:text-xl font-semibold text-white mb-4 leading-snug">Dziedzictwo świata postsowieckiego</h3>
-          <p class="text-[13px] text-white/70 leading-[1.9]">Opowieść wyrasta z doświadczenia życia w rzeczywistości postsowieckiej, gdzie przeszłość wciąż wpływa na sposób myślenia i postrzegania świata.</p>
+          <p class="text-[13px] text-white leading-[1.9]">Opowieść wyrasta z doświadczenia życia w rzeczywistości postsowieckiej, gdzie przeszłość wciąż wpływa na sposób myślenia i postrzegania świata.</p>
         </div>
         <div class="text-center">
           <div class="flex justify-center mb-6">
             <img src="/images/ikona-poland.png" alt="" class="h-16 md:h-20 w-auto" />
           </div>
           <h3 class="font-sans italic text-lg md:text-xl font-semibold text-white mb-4 leading-snug">Konfrontacja z wyobrażeniami</h3>
-          <p class="text-[13px] text-white/70 leading-[1.9]">Podróż do Polska staje się momentem przełomowym, konfrontacją wyobrażeń z codziennością, która zaskakuje i zmienia perspektywę.</p>
+          <p class="text-[13px] text-white leading-[1.9]">Podróż do Polski staje się momentem przełomowym, konfrontacją wyobrażeń z codziennością, która zaskakuje i zmienia perspektywę.</p>
         </div>
         <div class="text-center">
           <div class="flex justify-center mb-6">
             <img src="/images/ikona-palace.png" alt="" class="h-16 md:h-20 w-auto" />
           </div>
           <h3 class="font-sans italic text-lg md:text-xl font-semibold text-white mb-4 leading-snug">Symbol zmiany i nowoczesności</h3>
-          <p class="text-[13px] text-white/70 leading-[1.9]">To nie tylko opis miejsc, ale uważne spojrzenie na społeczeństwo, które funkcjonuje według innych zasad — bardziej uporządkowanych, przewidywalnych i opartych na wzajemnym szacunku.</p>
+          <p class="text-[13px] text-white leading-[1.9]">To nie tylko opis miejsc, ale uważne spojrzenie na społeczeństwo, które funkcjonuje według innych zasad — bardziej uporządkowanych, przewidywalnych i opartych na wzajemnym szacunku.</p>
         </div>
       </div>
     </section>
@@ -55,9 +55,9 @@ import '../styles/global.css';
     <section class="bg-white py-20 md:py-28 px-8">
       <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_380px] gap-12 md:gap-16 items-start">
         <div>
-          <img src="/images/signature-red.png" alt="Władimir Maximow" class="h-12 md:h-16 w-auto mb-10" />
+          <img src="/images/signature-red.png" alt="Władimir Maximow" class="w-1/2 h-auto mb-10" />
           <p class="text-[14px] text-gray-800 leading-[2] mb-5">Vladimir Maximov dorastał i przez większość życia funkcjonował w Naddniestrzu, gdzie codzienność kształtują inne zasady niż w krajach zachodnich. Doświadczył świata, w którym system, historia i propaganda mają realny wpływ na sposób myślenia ludzi, a porównania z inną Europą długo pozostają jedynie wyobrażeniem.</p>
-          <p class="text-[14px] text-gray-800 leading-[2] mb-5">Jego spojrzenie na rzeczywistość ukształtowały lata obserwacji życia w takich warunkach — pracy, relacji międzyludzkich i funkcjonowania państwa. Dopiero podróż do Polska stała się dla niego momentem konfrontacji z zupełnie innym światem: bardziej uporządkowanym, przewidywalnym i opartym na wzajemnym szacunku.</p>
+          <p class="text-[14px] text-gray-800 leading-[2] mb-5">Jego spojrzenie na rzeczywistość ukształtowały lata obserwacji życia w takich warunkach — pracy, relacji międzyludzkich i funkcjonowania państwa. Dopiero podróż do Polski stała się dla niego momentem konfrontacji z zupełnie innym światem: bardziej uporządkowanym, przewidywalnym i opartym na wzajemnym szacunku.</p>
         </div>
         <div class="hidden md:block">
           <img src="/images/about-portrait.png" alt="Vladimir Maximov" class="w-full h-auto" />
@@ -68,7 +68,7 @@ import '../styles/global.css';
     <!-- About - BOTTOM (dark background, notes + text) -->
     <section class="bg-dark py-16 md:py-20 px-8">
       <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[420px_1fr] gap-8 md:gap-16 items-center">
-        <div>
+        <div class="h-[250px] md:h-[300px] overflow-hidden">
           <img src="/images/handwritten-notes.png" alt="Odręczne zapiski" class="w-full h-auto" />
         </div>
         <div>
@@ -92,9 +92,7 @@ import '../styles/global.css';
           </div>
         </div>
         <div class="flex flex-col items-center gap-6">
-          <div class="h-[500px] overflow-hidden">
-            <img src="/images/book-cover.png" alt="Od Wisły do Odry — okładka" class="w-auto h-[700px] object-cover object-top" />
-          </div>
+          <img src="/images/book-cover.png" alt="Od Wisły do Odry — okładka" class="max-h-[500px] w-auto object-contain" />
           <a href="#" class="inline-block px-10 py-3 border border-white text-white text-sm font-medium tracking-wide hover:border-gold hover:text-gold transition-all duration-300">Kup teraz</a>
         </div>
       </div>
@@ -104,8 +102,8 @@ import '../styles/global.css';
     <section class="bg-dark-alt py-20 md:py-28 px-8 border-t border-white/5">
       <div class="max-w-[900px] mx-auto">
         <h2 class="font-sans italic text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide text-white leading-tight mb-8">ZAPISZ SIĘ<br />NA LISTĘ MAILINGOWĄ</h2>
-        <p class="font-body text-xs text-gray-500 mb-1">Pozostaw mi swój mail i bądź na bieżąco z wszystkimi publikacjami</p>
-        <p class="font-body text-xs text-gray-500">których będzie niebawem więcej</p>
+        <p class="font-body text-[10px] text-white mb-1">Pozostaw mi swój mail i bądź na bieżąco z wszystkimi publikacjami</p>
+        <p class="font-body text-[10px] text-white">których będzie niebawem więcej</p>
         <form class="mt-8 flex max-w-md">
           <input type="email" placeholder="Twój adres e-mail" required class="flex-1 px-5 py-3 bg-transparent border border-gray-600 border-r-0 text-white text-sm font-sans outline-none placeholder:text-gray-600 focus:border-gold transition-colors duration-300" />
           <button type="submit" aria-label="Zapisz się" class="px-5 py-3 bg-transparent border border-gray-600 text-white text-xl cursor-pointer hover:border-gold hover:text-gold transition-all duration-300">→</button>
@@ -116,7 +114,7 @@ import '../styles/global.css';
     <!-- Footer -->
     <footer class="relative bg-dark py-16 px-8 border-t border-white/5 overflow-hidden">
       <!-- Half-visible hammer & sickle -->
-      <img src="/images/ikona-sickle.png" alt="" class="absolute -bottom-16 -left-10 w-[200px] h-auto opacity-20 pointer-events-none" />
+      <img src="/images/ikona-sickle.png" alt="" class="absolute -bottom-10 -left-6 w-[220px] h-auto opacity-40 pointer-events-none" />
       <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-10 md:gap-16 items-start relative z-10">
         <!-- Left: portrait + branding side by side -->
         <div class="flex items-end gap-5">
@@ -130,21 +128,21 @@ import '../styles/global.css';
         </div>
         <!-- Social media -->
         <div class="md:pt-4">
-          <h4 class="text-xs font-semibold tracking-[0.15em] uppercase text-gray-500 mb-4">SOCIAL MEDIA</h4>
+          <h4 class="text-xs font-semibold tracking-[0.15em] uppercase text-white mb-4">SOCIAL MEDIA</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Instagram</a></li>
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">YouTube</a></li>
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Patronite</a></li>
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Buyacoffee</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Instagram</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">YouTube</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Patronite</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Buyacoffee</a></li>
           </ul>
         </div>
         <!-- Info -->
         <div class="md:pt-4">
-          <h4 class="text-xs font-semibold tracking-[0.15em] uppercase text-gray-500 mb-4">INFORMACJE</h4>
+          <h4 class="text-xs font-semibold tracking-[0.15em] uppercase text-white mb-4">INFORMACJE</h4>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Kontakt</a></li>
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Polityka prywatności</a></li>
-            <li><a href="#" class="text-gray-600 text-sm hover:text-gold transition-colors duration-300">Regulamin</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Kontakt</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Polityka prywatności</a></li>
+            <li><a href="#" class="text-white text-sm hover:text-gold transition-colors duration-300">Regulamin</a></li>
           </ul>
         </div>
       </div>
