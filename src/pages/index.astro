@@ -16,11 +16,17 @@ import '../styles/global.css';
   </head>
   <body class="bg-dark font-sans text-gray-300 leading-relaxed">
 
-    <!-- Hero -->
-    <section class="relative min-h-screen bg-dark overflow-hidden">
+    <!-- Hero: mobile = stacked title + portrait, desktop = combined image -->
+    <section class="relative bg-dark overflow-hidden">
       <img src="/images/manuscript-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
-      <div class="relative z-10 h-screen flex items-center justify-center">
-        <img src="/images/hero-full.png" alt="Władimir Maximow — od Wisły do Odry" class="w-full h-full object-cover object-[75%_center] md:object-center" />
+      <!-- Mobile hero -->
+      <div class="relative z-10 flex flex-col items-center px-8 pt-16 pb-0 md:hidden">
+        <img src="/images/hero-title.png" alt="od Wisły do Odry" class="w-3/4 h-auto mb-8" />
+        <img src="/images/hero-portrait.png" alt="Władimir Maximow" class="w-full max-w-sm h-auto" />
+      </div>
+      <!-- Desktop hero -->
+      <div class="relative z-10 h-screen hidden md:flex items-center justify-center">
+        <img src="/images/hero-full.png" alt="Władimir Maximow — od Wisły do Odry" class="w-full h-full object-cover" />
       </div>
     </section>
 
