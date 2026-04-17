@@ -74,7 +74,7 @@ import '../styles/global.css';
     <!-- About - BOTTOM (dark background, notes + text) -->
     <section class="bg-dark py-16 md:py-20 px-8">
       <div class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[420px_1fr] gap-8 md:gap-16 items-center">
-        <div class="h-[250px] md:h-[300px] overflow-hidden">
+        <div>
           <img src="/images/handwritten-notes.png" alt="Odręczne zapiski" class="w-full h-auto" />
         </div>
         <div>
@@ -105,9 +105,10 @@ import '../styles/global.css';
     </section>
 
     <!-- Mailing List -->
-    <section class="bg-dark-alt py-20 md:py-28 px-8 border-t border-white/5">
-      <div class="max-w-[900px] mx-auto">
-        <h2 class="font-sans italic text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide text-white leading-tight mb-8">ZAPISZ SIĘ<br />NA LISTĘ MAILINGOWĄ</h2>
+    <section class="relative bg-dark-alt py-20 md:py-28 px-8 border-t border-white/5 overflow-hidden">
+      <img src="/images/ikona-sickle.png" alt="" class="absolute top-8 right-6 md:top-10 md:right-10 w-[110px] md:w-[160px] h-auto opacity-80 pointer-events-none" />
+      <div class="relative max-w-[900px] mx-auto">
+        <h2 class="font-sans italic text-3xl md:text-5xl lg:text-6xl font-bold tracking-wide text-white leading-tight mb-8">ZAPISZ SIĘ<br />NA LISTĘ MAILINGOWĄ</h2>
         <p class="font-body text-[10px] text-white mb-1">Pozostaw mi swój mail i bądź na bieżąco z wszystkimi publikacjami</p>
         <p class="font-body text-[10px] text-white">których będzie niebawem więcej</p>
         <form class="mt-8 flex max-w-md">
